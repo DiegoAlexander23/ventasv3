@@ -4,7 +4,7 @@
         public function cargar(){
             $model=new ClienteModel();
             $clientes=$model->cargar();
-            require './view/viewCargarClientes.php';
+            require './view/CargarClientes.php';
         }
 
         public function guardar(){
@@ -20,7 +20,7 @@
                 header('Location: index.php');
             }
             else{
-                require './view/viewGuardarCliente.php';
+                require './view/GuardarCliente.php';
             }
 
         }
