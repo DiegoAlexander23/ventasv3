@@ -1,10 +1,10 @@
 <?php
-    require './model/ClienteModel.php';
+    require '../model/ClienteModel.php';
     class ClienteController{
         public function cargar(){
             $model=new ClienteModel();
             $clientes=$model->cargar();
-            require './view/CargarClientes.php';
+            //require '../view/CargarClientes.php';
         }
 
         public function guardar(){

@@ -23,16 +23,16 @@
             </thead>
             <tbody>
                 <?php
-                    require './controller/ClienteController.php';
-                    foreach($clientes as $cli){
+                    require '../controller/ClienteController.php';
+                    foreach($clientes as $cliente){
                 ?>
                 <tr>
-                    <td><?=$cli->getIdCliente()?></td>
-                    <td><?=$cli->getNombre()?></td>
-                    <td><?=$cli->getApellidos()?></td>
-                    <td><?=$cli->getDni()?></td>
-                    <td><?=$cli->getCelular()?></td>
-                    <td><?=$cli->getDireccion()?></td>
+                    <td><?=$cliente->getIdCliente();?></td>
+                    <td><?=$cliente->getNombre();?></td>
+                    <td><?=$cliente->getApellidos();?></td>
+                    <td><?=$cliente->getDni();?></td>
+                    <td><?=$cliente->getCelular();?></td>
+                    <td><?=$cliente->getDireccion();?></td>
                 </tr>
                 <?php
                     }
