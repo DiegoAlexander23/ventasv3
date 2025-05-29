@@ -1,6 +1,6 @@
 <?php  
-    require './config/DB.php';
-    require 'Cliente.php';
+    require_once './config/DB.php';
+    require_once 'Cliente.php';
 
     class ClienteModel{
         private $db;

@@ -23,7 +23,7 @@
             </thead>
             <tbody>
                 <?php
-                    require '../controller/ClienteController.php';
+                    require_once './controller/ClienteController.php';
                     foreach($clientes as $cliente){
                 ?>
                 <tr>

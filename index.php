@@ -1,5 +1,5 @@
 <?php
-    require './controller/ClienteController.php';
+    require_once './controller/ClienteController.php';
     $controller=new ClienteController();
     $accion=isset($_GET['accion'])?$_GET['accion']:'cargarclientes';
     switch($accion){

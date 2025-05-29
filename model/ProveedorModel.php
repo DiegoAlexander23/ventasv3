@@ -1,6 +1,6 @@
 <?php  
-    require './config/DB.php';
-    require 'Proveedor.php';
+    require_once './config/DB.php';
+    require_once 'Proveedor.php';
 
     class ProveedorModel{
         private $db;

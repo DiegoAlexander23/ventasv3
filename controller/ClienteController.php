@@ -1,10 +1,10 @@
 <?php
-    require '../model/ClienteModel.php';
+    require_once './model/ClienteModel.php';
     class ClienteController{
         public function cargar(){
             $model=new ClienteModel();
             $clientes=$model->cargar();
-            //require '../view/CargarClientes.php';
+            require_once './view/CargarClientes.php';
         }
 
         public function guardar(){
@@ -20,7 +20,7 @@
                 header('Location: index.php');
             }
             else{
-                require './view/GuardarCliente.php';
+                require_once './view/GuardarCliente.php';
             }
 
         }
